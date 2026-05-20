@@ -10,6 +10,7 @@ const dynaPuffDisplay = DynaPuff({
 
 import "@/_styles/globals.css";
 import HeaderComponent from "@/_components/navigation/header-component";
+import FooterComponent from "@/_components/navigation/footer-component";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.bombaybites.co.za"),
@@ -50,6 +51,7 @@ export default function RootLayout({
         />
         <HeaderComponent />
         {children}
+        <FooterComponent />
       </body>
     </html>
   );

@@ -4,17 +4,50 @@ import navData from "@/_data/nav-data.json";
 
 const FooterComponent = () => {
   return (
-    <footer className="bg-black w-full mt-20">
-      <div className="px-5 pt-10 pb-5 flex flex-col gap-5 desktop:max-w-[1280px] desktop:mx-auto desktop:px-[60px] desktop:pt-10 desktop:pb-5">
-        <div className="flex flex-col gap-10 items-center desktop:flex-row desktop:justify-between desktop:items-start desktop:gap-0">
-          <div className="flex flex-col gap-10 items-center desktop:items-end desktop:order-2">
-            <Image src="" alt="" width={50} height={50} />
-            <p className="text-paragraph text-white text-center desktop:text-right">
+    <footer className="bg-beige w-full mt-15">
+      <div className="px-7 pt-15 pb-7 flex flex-col gap-5 tablet:max-w-[1280px] tablet:mx-auto tablet:px-15 tablet:pb-5">
+        <div className="flex flex-col gap-10 items-center tablet:flex-row tablet:justify-between tablet:items-start tablet:gap-0">
+          <nav className="hidden tablet:block">
+            <ul className="grid">
+              {navData.map(({ title, url }, id) => {
+                return (
+                  <li key={id}>
+                    <Link
+                      href={url}
+                      className="text-[14px] text-black font-light hover:text-red"
+                    >
+                      {title}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
+          <div className="flex flex-col gap-5 items-center tablet:items-end">
+            <Link
+              href="/"
+              className="flex flex-col gap-3 items-center w-[250px] tablet:w-auto tablet:flex-row tablet:items-start"
+            >
+              <Image
+                src="/logo/bombay-bites-logo.png"
+                alt="Bombay Bites logo"
+                width={118}
+                height={101}
+                className="tablet:h-[34px] tablet:w-auto tablet:-translate-y-1.5"
+              />
+              <h1 className="text-[40px] font-semibold flex flex-col items-center gap-2 text-center tablet:text-[24px] tablet:text-right tablet:items-end tablet:gap-1">
+                Bombay Bites
+                <span className="text-[16px] font-extralight tablet:text-[14px]">
+                  Plettenberg Bay
+                </span>
+              </h1>
+            </Link>
+            <hr className="border-black/25 w-[125px] tablet:hidden" />
+            <p className="text-paragraph text-center flex flex-col gap-1 tablet:text-right tablet:text-[14px]">
               Designed &amp; developed by
-              <br />
               <Link
                 href="https://thewrightdesigns.co.za"
-                className="text-white transition-opacity duration-300 desktop:hover:opacity-80"
+                className="hover:opacity-80"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -23,8 +56,12 @@ const FooterComponent = () => {
             </p>
           </div>
         </div>
-        <p className="text-paragraph text-white text-center w-full">
-          www.robbergpharmacy.co.za | © 2025 Robberg Pharmacy
+        <p className="text-paragraph text-center w-full flex flex-col gap-1 items-center tablet:flex-row tablet:text-[14px] tablet:justify-center">
+          © {new Date().getFullYear()} Bombay Bites
+          <span className="hidden tablet:block">|</span>
+          <Link href="/" className="hover:opacity-80">
+            www.bombaybites.co.za
+          </Link>
         </p>
       </div>
     </footer>

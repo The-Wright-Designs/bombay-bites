@@ -76,7 +76,7 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
                   <Link
                     href={url}
                     onClick={() => setIsOpen(false)}
-                    className="text-paragraph text-white font-light p-2 -m-2"
+                    className="text-paragraph text-white font-extralight p-2 -m-2"
                   >
                     {title}
                   </Link>
