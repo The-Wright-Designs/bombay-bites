@@ -3,8 +3,8 @@ import { HeaderMobile } from "./mobile/header-mobile";
 
 const HeaderComponent = () => {
   return (
-    <header className="top-0 sticky z-20 bg-black px-5 py-7 border-b-4 border-white">
-      <HeaderDesktop cssClasses="hidden desktop:block max-w-[1280px] mx-auto" />
+    <header className="top-0 sticky z-20 bg-beige px-7 py-5 border-b-4 border-red">
+      <HeaderDesktop cssClasses="hidden desktop:flex max-w-[1280px] mx-auto" />
       <HeaderMobile cssClasses="desktop:hidden" />
     </header>
   );

@@ -8,11 +8,15 @@
     "url": "/#about"
   },
   {
-    "title": "Services",
+    "title": "Gallery",
     "url": "/#services"
   },
   {
     "title": "Contact",
     "url": "/#contact"
+  },
+  {
+    "title": "View Menu",
+    "url": "#"
   }
 ]

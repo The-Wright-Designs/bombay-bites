@@ -1,36 +1,51 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Mozilla Text";
+  src: url("../_fonts/mozilla-text/mozilla-text-variable-font.woff2") format("woff2"),
+    url("../_fonts/mozilla-text/mozilla-text-variable-font.woff") format("woff"),
+    url("../_fonts/mozilla-text/mozilla-text-variable-font.otf") format("opentype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-*: initial;
-  --color-black: #000000;
-  --color-white: #ffffff;
-  --color-link-blue: #0000ff;
-  --color-transparent: transparent;
+  --color-beige: #FBE8C8;
+  --color-black: #202020;
+  --color-brown: #68250A;
+  --color-link: #0000EE;
+  --color-red: #9C1A0D;
+  --color-white: #FFFFFF;
 
   --text-*: initial;
+  --text-heading: 3rem;
+  --text-heading--font-weight: 400;
+  --text-heading--line-height: 1;
   --text-paragraph: 1rem;
-  --text-paragraph--font-weight: 400;
+  --text-paragraph--font-weight: 200;
+  --text-paragraph--line-height: 1;
   --text-subheading: 1rem;
   --text-subheading--font-weight: 700;
-  --text-heading: 2rem;
-  --text-heading--font-weight: 200;
-  --text-heading--line-height: 30px;
 
   --breakpoint-*: initial;
   --breakpoint-phone: 425px;
   --breakpoint-tablet: 800px;
   --breakpoint-desktop: 1280px;
+
+  --font-dynapuff: var(--font-dynapuff), Arial, sans-serif;
+  --font-mozilla-text: "Mozilla Text", Arial, sans-serif;
 }
 
 @layer components {
   * {
-    @apply text-black;
-    font-family: "Roboto", Arial, sans-serif;
+    @apply text-black font-mozilla-text;
   }
 
   h1,
   h2 {
-    @apply text-heading;
+    @apply text-heading font-dynapuff;
   }
 
   h3,
@@ -48,7 +63,7 @@
   }
 
   a {
-    @apply text-link-blue ease-in-out duration-300;
+    @apply text-link ease-in-out duration-300;
   }
 }
 
