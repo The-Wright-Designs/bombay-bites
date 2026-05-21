@@ -19,6 +19,7 @@ const HeaderDesktop = ({ cssClasses }: DesktopHeaderProps) => {
           alt="Bombay Bites logo"
           width={80}
           height={69}
+          className="h-auto"
         />
         <h1 className="text-[40px] font-semibold flex flex-col">
           Bombay Bites

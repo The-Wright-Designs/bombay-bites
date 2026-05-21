@@ -36,6 +36,7 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
             alt="Bombay Bites logo"
             width={66}
             height={57}
+            className="h-auto"
           />
           <h1 className="text-[18px] min-[400px]:text-[28px] font-semibold flex flex-col">
             Bombay Bites

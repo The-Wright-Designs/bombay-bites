@@ -1,3 +1,4 @@
+import AboutComponent from "@/_components/home-page/about-component";
 import HeroComponent from "@/_components/home-page/hero/hero-component";
 import PageWrapper from "@/_lib/utils/page-wrapper";
 
@@ -5,15 +6,8 @@ export default function HomePage() {
   return (
     <div>
       <HeroComponent />
-      <PageWrapper>
-        <h1>Heading</h1>
-        <h3>Subheading</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
+      <PageWrapper cssClasses="desktop:mt-15">
+        <AboutComponent />
       </PageWrapper>
     </div>
   );

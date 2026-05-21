@@ -26,7 +26,7 @@ export default function HeroComponent() {
             </h2>
           </div>
           <hr className="border-black/25 w-full desktop:hidden" />
-          <p className="text-red text-[32px] font-dynapuff text-center desktop:text-white desktop:text-[44px] desktop:mt-3">
+          <p className="z-10 text-red text-[32px] font-dynapuff text-center desktop:text-white desktop:text-[44px] desktop:mt-3">
             Curry &apos;n All
           </p>
           <div className="hidden desktop:block absolute h-2/3 w-[200%] -left-14 bottom-0 bg-brown/20 -rotate-60" />
@@ -41,7 +41,7 @@ export default function HeroComponent() {
           </div>
         </div>
       </div>
-      <div className="px-7 pt-15 pb-10 grid phone:grid-cols-2 gap-7 tablet:flex tablet:justify-center tablet:pt-10 desktop:hidden">
+      <div className="px-7 pb-15 pt-10 grid phone:grid-cols-2 gap-7 tablet:flex tablet:justify-center desktop:hidden">
         <ButtonLink redButton>View Menu</ButtonLink>
         <ButtonLink>Orders</ButtonLink>
       </div>

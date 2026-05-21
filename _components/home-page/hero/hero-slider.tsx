@@ -29,17 +29,17 @@ const HeroSlider = ({ cssClasses, data }: Props) => {
         clickable: true,
       }}
       loop
+      focusableElements=""
     >
       {data.map((slide, index) => (
-        <SwiperSlide key={index}>
+        <SwiperSlide key={index} className="relative">
           <Image
             src={slide}
             alt={`Slideshow - Image ${index + 1}`}
-            className="w-full h-full object-cover"
-            width={1280}
-            height={600}
-            loading={index < 1 ? "eager" : "lazy"}
-            sizes="(max-width: 1280px) 100vw, 1280px"
+            className="object-cover"
+            fill
+            loading={index < 2 ? "eager" : "lazy"}
+            sizes="(max-width: 1280px) 100vw, 900px"
           />
         </SwiperSlide>
       ))}
