@@ -31,7 +31,7 @@ const HeroSlider = ({ cssClasses, data }: Props) => {
       loop
     >
       {data.map((slide, index) => (
-        <SwiperSlide key={index} className="pb-8">
+        <SwiperSlide key={index}>
           <Image
             src={slide}
             alt={`Slideshow - Image ${index + 1}`}

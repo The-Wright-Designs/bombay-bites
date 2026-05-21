@@ -7,6 +7,7 @@ export interface ButtonProps {
   disabled?: boolean;
   ariaLabel?: string;
   redButton?: boolean;
+  whiteBorder?: boolean;
   target?: "_self" | "_blank";
   title?: string;
 }

@@ -32,7 +32,7 @@ const HeaderDesktop = ({ cssClasses }: DesktopHeaderProps) => {
             className={classNames(
               "text-paragraph",
               item.title === "View Menu"
-                ? "px-1.5 py-1 bg-red text-white border-4 border-red font-normal rounded-sm hover:bg-transparent hover:text-black"
+                ? "px-1.5 py-1.5 bg-red text-white border-2 border-red font-normal rounded-sm hover:bg-transparent hover:text-black"
                 : "text-black font-extralight desktop:hover:text-red",
             )}
             href={item.url}

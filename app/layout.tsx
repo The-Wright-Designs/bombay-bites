@@ -4,7 +4,7 @@ import { DynaPuff } from "next/font/google";
 
 const dynaPuffDisplay = DynaPuff({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "600"],
   variable: "--font-dynapuff",
 });
 

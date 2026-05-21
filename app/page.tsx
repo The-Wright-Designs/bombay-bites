@@ -1,9 +1,10 @@
+import HeroComponent from "@/_components/home-page/hero/hero-component";
 import PageWrapper from "@/_lib/utils/page-wrapper";
 
 export default function HomePage() {
   return (
     <div>
-      {/* <HeroComponent /> */}
+      <HeroComponent />
       <PageWrapper>
         <h1>Heading</h1>
         <h3>Subheading</h3>
