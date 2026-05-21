@@ -1,6 +1,5 @@
 import Image from "next/image";
 import SectionHeading from "@/_components/ui/section-heading";
-import ianImage from "@/public/images/team/ian.jpg";
 
 const AboutComponent = () => {
   return (
@@ -38,20 +37,20 @@ const AboutComponent = () => {
       <div className="grid gap-10 min-[375px]:grid-cols-2 min-[375px]:gap-7 min-[375px]:h-[75vw] min-[1000px]:h-full">
         <div className="relative rounded-sm aspect-square min-[375px]:aspect-auto">
           <Image
-            src="/images/team/millie"
-            alt="Millie"
+            src="/images/team/millie.jpg"
+            alt="Millie - Bombay Bites"
             fill
             className="object-cover"
-            sizes="(max-width:1000px)50vw,350px"
+            sizes="(max-width:1000px) 75vw, 350px"
           />
         </div>
         <div className="relative rounded-sm aspect-square min-[375px]:aspect-auto">
           <Image
-            src={ianImage}
-            alt="Ian"
+            src="/images/team/ian.jpg"
+            alt="Ian - Bombay Bites"
             fill
             className="object-cover"
-            sizes="(max-width:1000px)50vw,350px"
+            sizes="(max-width:1000px) 75vw, 350px"
           />
         </div>
       </div>
