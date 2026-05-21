@@ -4,7 +4,7 @@ import navData from "@/_data/nav-data.json";
 
 const FooterComponent = () => {
   return (
-    <footer className="bg-beige w-full mt-15">
+    <footer className="bg-beige w-full desktop:mt-15">
       <div className="px-7 pt-15 pb-7 flex flex-col gap-5 tablet:max-w-[1280px] tablet:mx-auto tablet:px-15 tablet:pb-5">
         <div className="flex flex-col gap-10 items-center tablet:flex-row tablet:justify-between tablet:items-start tablet:gap-0">
           <nav className="hidden tablet:block">

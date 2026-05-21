@@ -22,7 +22,13 @@ const ButtonType = ({
       type={type}
       onClick={onClick}
       aria-label={ariaLabel}
-      className={buttonStyles(cssClasses, disabled, pending, redButton, whiteBorder)}
+      className={buttonStyles(
+        cssClasses,
+        disabled,
+        pending,
+        redButton,
+        whiteBorder,
+      )}
       disabled={disabled || pending}
       title={title}
     >

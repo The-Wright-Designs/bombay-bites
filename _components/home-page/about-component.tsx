@@ -3,7 +3,10 @@ import SectionHeading from "@/_components/ui/section-heading";
 
 const AboutComponent = () => {
   return (
-    <div className="grid gap-10 min-[1000px]:grid-cols-2">
+    <main
+      className="grid gap-10 scroll-mt-32 min-[1000px]:grid-cols-2 desktop:scroll-mt-40"
+      id="about"
+    >
       <div className="flex flex-col gap-10">
         <SectionHeading heading="About" cssClasses="w-full" />
         <p>
@@ -54,7 +57,7 @@ const AboutComponent = () => {
           />
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

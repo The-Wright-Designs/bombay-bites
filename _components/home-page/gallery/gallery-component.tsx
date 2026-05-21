@@ -9,8 +9,8 @@ interface Props {
 
 const GalleryComponent = ({ cssClasses }: Props) => {
   return (
-    <section className={cssClasses}>
-      <SectionHeading heading="Gallery" cssClasses="mb-10" />
+    <section className={cssClasses} id="gallery">
+      <SectionHeading heading="Gallery" cssClasses="mb-10 w-full" />
       <GallerySlider data={generalData.gallerySlider} />
     </section>
   );

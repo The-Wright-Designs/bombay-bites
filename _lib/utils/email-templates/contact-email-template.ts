@@ -19,12 +19,12 @@ export const contactEmailTemplate = ({
     <title>Bombay Bites - Contact Form Submission</title>
     <style>
       .container { max-width: 600px; margin: 0 auto; font-family: Arial, sans-serif; }
-      .header { background-color: #13103F; color: white; padding: 1rem; }
+      .header { background-color: #9C1A0D; color: white; padding: 1rem; }
       .content { padding: 1rem; }
       .field { margin-bottom: 0.5rem; }
       .label { font-weight: 500; }
       .value { font-weight: 200; font-style: italic; color: #333; }
-      .section-title { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #13103F; }
+      .section-title { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #9C1A0D; }
       .footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #eee; font-size: 0.9rem; color: #666; }
     </style>
   </head>

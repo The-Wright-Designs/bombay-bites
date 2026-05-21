@@ -37,13 +37,15 @@ export default function HeroComponent() {
             <ButtonLink redButton whiteBorder>
               View Menu
             </ButtonLink>
-            <ButtonLink>Orders</ButtonLink>
+            <ButtonLink whiteBorder href="/#contact">
+              Orders
+            </ButtonLink>
           </div>
         </div>
       </div>
       <div className="px-7 pb-15 pt-10 grid phone:grid-cols-2 gap-7 tablet:flex tablet:justify-center desktop:hidden">
         <ButtonLink redButton>View Menu</ButtonLink>
-        <ButtonLink>Orders</ButtonLink>
+        <ButtonLink href="/#contact">Orders</ButtonLink>
       </div>
     </div>
   );
