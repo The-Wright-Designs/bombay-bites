@@ -78,6 +78,7 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
                     href={url}
                     onClick={() => setIsOpen(false)}
                     className="text-paragraph text-white font-extralight p-2 -m-2"
+                    target={title === "View Menu" ? "_blank" : "_self"}
                   >
                     {title}
                   </Link>

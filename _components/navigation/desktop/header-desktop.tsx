@@ -37,6 +37,7 @@ const HeaderDesktop = ({ cssClasses }: DesktopHeaderProps) => {
                 : "text-black font-extralight desktop:hover:text-red",
             )}
             href={item.url}
+            target={item.title === "View Menu" ? "_blank" : "_self"}
           >
             {item.title}
           </Link>
