@@ -14,15 +14,17 @@ import FooterComponent from "@/_components/navigation/footer-component";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.bombaybites.co.za"),
-  title: "Bombay Bites",
-  description: "Bombay Bites - Authentic Indian cuisine in South Africa",
+  title: "Bombay Bites | Plettenberg Bay",
+  description:
+    "Bombay Bites - Authentic Indian cuisine at Market Off Main in Plettenberg Bay",
   keywords:
-    "Bombay Bites, Indian restaurant, Indian cuisine, South Africa, authentic Indian food, curry, biryani, Indian takeaway, Indian food delivery, spicy food, Bombay street food, Indian restaurant South Africa",
+    "Bombay Bites, Plettenberg Bay, Plettenberg Bay restaurant, Plettenberg Bay food, Plettenberg Bay takeaway, Plett restaurant, Plett food, Plett takeaway, Indian restaurant, Indian cuisine, authentic Indian food, curry, biryani, Indian takeaway, Indian restaurant Plettenberg Bay",
   openGraph: {
-    description: "Bombay Bites - Authentic Indian cuisine in South Africa",
+    description:
+      "Bombay Bites - Authentic Indian cuisine at Market Off Main in Plettenberg Bay",
     type: "website",
     locale: "en_ZA",
-    siteName: "Bombay Bites",
+    siteName: "Bombay Bites | Plettenberg Bay",
     images: [
       {
         url: "/open-graph-image.webp",
