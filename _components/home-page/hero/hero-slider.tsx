@@ -17,7 +17,7 @@ const HeroSlider = ({ cssClasses, data }: Props) => {
   return (
     <Swiper
       autoplay={{
-        delay: 6000,
+        delay: 4000,
       }}
       spaceBetween={12}
       speed={1000}
