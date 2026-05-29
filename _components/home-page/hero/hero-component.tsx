@@ -34,7 +34,12 @@ export default function HeroComponent() {
           <div className="hidden desktop:block absolute h-2/3 w-[200%] bottom-0 left-24 bg-brown/60 -rotate-60" />
           <div className="hidden desktop:block absolute h-2/3 w-[200%] bottom-0 left-44 bg-brown -rotate-60" />
           <div className="hidden desktop:grid z-10 grid-cols-2 gap-5 mt-10">
-            <ButtonLink redButton whiteBorder>
+            <ButtonLink
+              redButton
+              whiteBorder
+              href="/menu/bombay-bites-menu.pdf"
+              target="_blank"
+            >
               View Menu
             </ButtonLink>
             <ButtonLink whiteBorder href="/#contact">
