@@ -35,6 +35,7 @@ const GallerySlider = ({ cssClasses, data }: Props) => {
         }}
         speed={1000}
         modules={[Autoplay, Pagination]}
+        a11y={{ enabled: false }}
         pagination={{ dynamicBullets: true, clickable: true }}
         loop
         onSwiper={(swiper) => (swiperRef.current = swiper)}
