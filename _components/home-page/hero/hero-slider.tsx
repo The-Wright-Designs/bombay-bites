@@ -22,6 +22,7 @@ const HeroSlider = ({ cssClasses, data }: Props) => {
       spaceBetween={12}
       speed={1000}
       modules={[Autoplay, Pagination, EffectFade]}
+      a11y={{ enabled: false }}
       className={cssClasses}
       effect="fade"
       pagination={{
