@@ -37,7 +37,7 @@ export default function HeroComponent() {
             <ButtonLink
               redButton
               whiteBorder
-              href="/menu/bombay-bites-menu.pdf"
+              href="https://drive.google.com/file/d/1uEk2T-LiQ_ncl7JXLc6DZmrQMMQX6MSC/view"
               target="_blank"
             >
               View Menu
@@ -51,7 +51,7 @@ export default function HeroComponent() {
       <div className="px-7 pb-15 pt-10 grid phone:grid-cols-2 gap-7 tablet:flex tablet:justify-center desktop:hidden">
         <ButtonLink
           redButton
-          href="/menu/bombay-bites-menu.pdf"
+          href="https://drive.google.com/file/d/1uEk2T-LiQ_ncl7JXLc6DZmrQMMQX6MSC/view"
           target="_blank"
         >
           View Menu
