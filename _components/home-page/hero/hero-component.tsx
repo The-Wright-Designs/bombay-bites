@@ -37,7 +37,7 @@ export default function HeroComponent() {
             <ButtonLink
               redButton
               whiteBorder
-              href="https://drive.google.com/file/d/1uEk2T-LiQ_ncl7JXLc6DZmrQMMQX6MSC/view"
+              href="https://drive.google.com/file/d/17_KVPgoVe7XNFWTFHIRsd-7dViNy87uI/view"
               target="_blank"
             >
               View Menu
@@ -51,7 +51,7 @@ export default function HeroComponent() {
       <div className="px-7 pb-15 pt-10 grid phone:grid-cols-2 gap-7 tablet:flex tablet:justify-center desktop:hidden">
         <ButtonLink
           redButton
-          href="https://drive.google.com/file/d/1uEk2T-LiQ_ncl7JXLc6DZmrQMMQX6MSC/view"
+          href="https://drive.google.com/file/d/17_KVPgoVe7XNFWTFHIRsd-7dViNy87uI/view"
           target="_blank"
         >
           View Menu
