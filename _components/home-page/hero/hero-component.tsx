@@ -2,7 +2,6 @@ import ButtonLink from "@/_components/ui/buttons/button-link";
 import HeroSlider from "./hero-slider";
 
 import sliderData from "@/_data/general-data.json";
-import ButtonType from "@/_components/ui/buttons/button-type";
 
 const { heroSlider } = sliderData;
 
@@ -12,7 +11,7 @@ export default function HeroComponent() {
       <div className="relative desktop:grid grid-cols-[800px_1fr]">
         <HeroSlider
           data={heroSlider}
-          cssClasses="h-[650px] desktop:h-[600px] desktop:w-full"
+          cssClasses="h-[650px] desktop:h-full desktop:w-full"
         />
         <div className="z-10 absolute inset-0 m-auto h-fit w-fit bg-white/90 flex flex-col gap-3 items-center px-10 py-8 rounded-sm desktop:relative desktop:h-full desktop:w-full desktop:rounded-none desktop:bg-red desktop:items-start desktop:justify-center overflow-hidden">
           <div className="flex flex-col gap-1 items-center text-center desktop:text-left desktop:items-start desktop:gap-5 desktop:z-10">
@@ -33,7 +32,7 @@ export default function HeroComponent() {
           <div className="hidden desktop:block absolute h-2/3 w-[200%] bottom-0 left-4 bg-brown/40 -rotate-60" />
           <div className="hidden desktop:block absolute h-2/3 w-[200%] bottom-0 left-24 bg-brown/60 -rotate-60" />
           <div className="hidden desktop:block absolute h-2/3 w-[200%] bottom-0 left-44 bg-brown -rotate-60" />
-          <div className="hidden desktop:grid z-10 grid-cols-2 gap-5 mt-10">
+          <div className="hidden desktop:grid gap-5 w-full z-10 mt-10">
             <ButtonLink
               redButton
               whiteBorder
@@ -42,13 +41,21 @@ export default function HeroComponent() {
             >
               View Menu
             </ButtonLink>
+            <ButtonLink
+              redButton
+              whiteBorder
+              href="https://drive.google.com/file/d/1wf87mBPkTp_pzlxR3LgJs-W96BgHPAN-/view"
+              target="_blank"
+            >
+              Chef's Specials
+            </ButtonLink>
             <ButtonLink whiteBorder href="/#contact">
               Orders
             </ButtonLink>
           </div>
         </div>
       </div>
-      <div className="px-7 pb-15 pt-10 grid phone:grid-cols-2 gap-7 tablet:flex tablet:justify-center desktop:hidden">
+      <div className="px-7 pb-15 pt-10 grid gap-5 min-[600px]:grid-cols-2 min-[600px]:gap-7 tablet:flex tablet:justify-center desktop:hidden">
         <ButtonLink
           redButton
           href="https://drive.google.com/file/d/17_KVPgoVe7XNFWTFHIRsd-7dViNy87uI/view"
@@ -56,7 +63,20 @@ export default function HeroComponent() {
         >
           View Menu
         </ButtonLink>
-        <ButtonLink href="/#contact">Orders</ButtonLink>
+        <ButtonLink
+          redButton
+          whiteBorder
+          href="https://drive.google.com/file/d/1wf87mBPkTp_pzlxR3LgJs-W96BgHPAN-/view"
+          target="_blank"
+        >
+          Chef's Specials
+        </ButtonLink>
+        <ButtonLink
+          href="/#contact"
+          cssClasses="min-[600px]:col-span-2 min-[600px]:place-self-center min-[600px]:min-w-[35vw] tablet:min-w-auto"
+        >
+          Orders
+        </ButtonLink>
       </div>
     </div>
   );

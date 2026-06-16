@@ -77,7 +77,11 @@ export function HeaderMobile({ cssClasses }: MobileHeaderProps) {
                   <Link
                     href={url}
                     onClick={() => setIsOpen(false)}
-                    className="text-paragraph text-white font-extralight p-2 -m-2"
+                    className={classNames(
+                      "text-paragraph text-white font-extralight p-2 -m-2",
+                      title === "View Menu" &&
+                        "px-2 py-2 bg-red font-normal rounded-sm",
+                    )}
                     target={title === "View Menu" ? "_blank" : "_self"}
                   >
                     {title}
